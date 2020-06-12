@@ -68,11 +68,7 @@ class MapView extends React.Component {
     return !this.state.isLoaded ? (
       <LoadingScreen className="loading" />
     ) : (
-      <Map
-        center={[this.state.currentLatitude, this.state.currentLongitude]}
-        zoom={17}
-        maxZoom={19}
-      >
+      <Map center={[12.9721, 77.5933]} zoom={17} maxZoom={19}>
         <LayersControl>
           <LayersControl.BaseLayer name="Mapnik (Light)">
             <TileLayer
