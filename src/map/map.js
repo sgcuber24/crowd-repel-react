@@ -74,16 +74,16 @@ class MapView extends React.Component {
         maxZoom={19}
       >
         <LayersControl>
-          <LayersControl.BaseLayer name="Mapnik (Light)" checked>
+          <LayersControl.BaseLayer name="Mapnik (Light)">
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />
           </LayersControl.BaseLayer>
-          <LayersControl.BaseLayer name="Stadia (Dark)">
+          <LayersControl.BaseLayer name="CartoCDN (Dark)" checked>
             <TileLayer
-              url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
-              attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+              url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
             />
           </LayersControl.BaseLayer>
           <LayersControl.Overlay name="Heatmap">
