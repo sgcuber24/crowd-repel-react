@@ -90,7 +90,7 @@ class MapView extends React.Component {
               latitudeExtractor={(m) => m['latitude']}
               intensityExtractor={(m) => parseFloat(m['peopleCount'])}
               gradient={{ 0.4: 'blue', 0.8: 'orange', 1.0: 'red' }}
-              max={2.0}
+              max={8.0}
             />
           </LayersControl.Overlay>
           <LayersControl.Overlay name="Circle" checked>
