@@ -1,6 +1,9 @@
 # Crowd Repel
 
 This project shows a map as a frontend to mark crowd densities.
+Backend: <https://github.com/sgcuber24/CrowdRepelAPI>.
+ML Model: <https://github.com/Ashwin-Ramesh2607/Crowd-Human-Detection>
+
 
 In the project directory, you can run:
 
